@@ -1,0 +1,407 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+h1, h2, h3, h4, h5, h6, p{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    font-size: 50px;
+}
+h2{
+    font-size: 40px;
+    font-weight: 400;
+    color: #0f5f5c;
+}
+h4{
+    font-size: 22px;
+    color: #0f5f5c;
+}
+p{
+    font-size: 16px;
+    color: #83a7a5;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    /* font-family: 'Montserrat', sans-serif; */
+    font-family: 'Roboto', sans-serif;
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/banner_img.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 0;
+}
+.banner::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #2d6e70;
+    opacity: 90%;
+    z-index: -1;
+}
+.banner::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 25vh;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+100&0.65+0,0+100;Neutral+Density */
+    background: linear-gradient(to bottom,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    opacity: 90%;
+    z-index: -1;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar{
+    z-index: 10 !important;
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px 0;
+}
+.navbar .nav-link{
+    color: #b3bfbf;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 0 !important;
+    padding: 20px !important;
+}
+.navbar .nav-link:hover{
+    color: #fff;
+}
+.after_logo{
+    display: block;
+    width: 1px;
+    height: 25px;
+    background-color: #b3bfbf;
+}
+.active{
+    color: #fff !important;
+    font-weight: 600 !important;
+}
+.get_started_btn{
+    border: none;
+    border-radius: 3px;
+    background-color: #b3bfbfb8;
+    color: #fff;
+    font-weight: 600;
+    padding: 0;
+    padding: 8px 16px;
+    margin-left: 20px;
+    transition: .6 all ease-in-out;
+}
+.get_started_btn:hover{
+    background-color: #6fb048;
+    color: #fff;
+}
+.header_line span{
+    display: block;
+    height: 1px;
+    width: 100%;
+    background-color: #b3bfbf;
+}
+.banner_contents{
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+.banner_content h1{
+    font-weight: 400;
+}
+.banner_content p{
+    color: #fff;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    font-size: 18px;
+}
+.learn_more_btn{
+    border: none;
+    border-radius: 3px;
+    background-color: #6fb048;
+    color: #fff;
+    font-weight: 600;
+    padding: 0;
+    padding: 18px 50px;
+    transition: all 0.3s ease 0s;
+    font-family: 'Montserrat', sans-serif;
+}
+.learn_more_btn:hover{
+    background-color: #b3bfbfb8;
+    color: #fff;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transform: translateY(-4px);
+}
+.features_section{
+    padding: 100px 0;
+}
+.features_section span{
+    display: block;
+    margin: auto;
+    width: 80px;
+    height: 2px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #6fb048;
+}
+.features_card{
+    padding: 70px 0 130px;
+}
+.features_card h4{
+    padding: 25px 0;
+}
+.features_span span{
+    display: block;
+    margin: auto;
+    width: 100px;
+    height: 2px;
+    background-color: #f2f2f2;
+    position: relative;
+}
+.features_span span::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: auto;
+    width: 2px;
+    height: 120px;
+    background-color: #f2f2f2;
+}
+.features_card2{
+
+}
+.features_card2 p{
+    padding-top: 25px;
+}
+.card_contents{
+    display: flex;
+    align-items: center;
+    margin-top: 60px;
+}
+/* .card_contents img{
+    display: block;
+    height: 35px;
+    width: 35px;
+} */
+
+.card_icon{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card_icon{
+
+}
+.card_contents h4{
+    margin-left: 30px;
+}
+.responsiv_info_section{
+    background-color: #eef1ec;
+    padding-bottom: 0;
+}
+.responsiv_info_section_content h2{
+    padding-bottom: 25px;
+}
+.responsiv_info_section_content img{
+    max-width: 100%;
+}
+.responsiv_info_section_contents{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    overflow: hidden;
+}
+.checked_text{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+.checked_text p{
+    margin-left: 15px;
+}
+.comment_section{
+    padding: 100px 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+.comment_wrapper{
+    display: flex;
+    align-items: center;
+    height: 50vh;
+}
+.comment{
+    
+}
+.comment h3{
+    font-size: 26px;
+    color: #83a7a5;
+    line-height: 1.5;
+}
+.comment p{
+    padding-top: 70px;
+    font-size: 18px;
+
+}
+.comment span{
+    color: #6fb048;
+}
+.comment_img{
+    display: flex;
+    align-items: center;
+    height: 50vh;
+}
+.details_section{
+    padding: 100px 0;
+    background-color: #eef1ec;
+}
+.details_wrapper{
+    height: 50vh;
+    display: flex;
+    align-items: center;
+}
+.details{
+    
+}
+.details h2{
+    padding-bottom: 30px;
+}
+.details{
+
+}
+.details_img{
+    position: relative;
+}
+.img_bgc::before{
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/world_map.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.details_img img{
+
+}
+.card{
+    border-radius: 0;
+    border-color: #c1d3d2;
+    padding: 30px 40px;
+    margin-top: 40px;
+    margin-bottom: 80px;
+}
+.price_card{
+    
+}
+.price_card h4{
+    color: #6fb048;
+    font-size: 20px;
+    font-weight: 600;
+
+}
+.price_card h1{
+    color: #0f5f5c;
+    font-size: 86px;
+    font-weight: 700;
+    padding-top: 30px;
+}
+.price_card h6{
+    color: #0f5f5c;
+    font-size: 20px;
+}
+.price_card p{
+    color: #83a7a5;
+    padding: 30px;
+}
+.btn_price{
+    border: none;
+    border-radius: 3px;
+    background-color: #83a7a5;
+    color: #fff;
+    font-weight: 600;
+    padding: 0;
+    padding: 12px 30px;
+    transition: .6 all ease-in-out;
+    font-family: 'Montserrat', sans-serif;
+}
+.btn_price:hover{
+    background-color: #6fb048;
+    color: #fff;
+}
+.about_plans h2{
+    font-size: 30px;
+}
+.help{
+    padding-top: 50px;
+}
+.help h2{
+    color: #6fb048;
+    padding-top: 20px;
+}
+.footer_section{
+    
+}
+.footer_section h2{
+    font-weight: 900;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    color: #2d6e70;
+}
+.footer_section span{
+    font-weight: bold;
+}
+.footer_section p{
+    color: #83a7a5;
+    line-height: 2;
+}
+.footer_section h4{
+    color: #2d6e70;
+    line-height: 2;
+    font-size: 20px;
+}
+.footer_section ul{
+    padding-left: 0;
+}
+.footer_section ul li{
+    margin-left: 0;
+}
+.footer_section ul li a{
+    text-decoration: none;
+    line-height: 2;
+    color: #83a7a5;
+    font-size: 16px;
+}
+footer{
+    
+}
+footer span{
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #83a7a5;
+}
+footer p{
+    padding: 20px 0;
+}
